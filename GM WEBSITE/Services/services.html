@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="servicestyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="sidebar">
+            <a href="..//homepage.html"><img src="..//GMLOGO.png" class="logo"></a>
+                <h2>SERVICES</h2>
+                    <div class="filter-category">
+                        <button class="filter-btn" onclick="filterSelection('id')"> ID</button>
+                        <button class="filter-btn" onclick="filterSelection('tarpulin')"> Tarpulin</button>
+                        <button class="filter-btn" onclick="filterSelection('photo-restoration')"> Photo Restoration</button>
+                        <button class="filter-btn" onclick="filterSelection('print-lamination')"> Print & Lamination</button>
+
+                        <button id="openFormButton" class="order-button">Reserve Now</button>
+                    </div>
+                </div>
+
+                <!-- Burger Icon -->
+            <a class="burger-menu"><i class='bx bx-menu bx-md'></i></a>
+    </nav>
+
+    <div class="content-area">
+        <!-- Card Container for Filterable Content -->
+        <div class="card-container">
+            <!-- ID Services -->
+            <div class="card filter-item id">
+                <img src="id1.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package 1</h3>
+                    <p>ID Package 5: 4 pcs. 2 x 2 in. and 8 pcs. 1 x 1 in ₱60.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="id2.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package 2</h3>
+                    <p>ID Package 2: 6 pcs. 2 x 2 in ₱60.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="id3.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package 3</h3>
+                    <p>ID Package 4: 6 pcs. Passport Size 1.37 x 1.77 in ₱60.00</p>
+                </div>
+            </div>
+
+            <div class="card filter-item id">
+                <img src="id4.png" alt="ID Services">
+                <div class="card-content">
+                    <h3>Package 4</h3>
+                    <p>ID Package 8: 3 pcs. 2 x 2 in. and 3 pcs. Passport Size 1.37 x 1.77 in ₱60.00</p>
+                </div>
+            </div>
+            
+
+            <!-- Tarpulin -->
+            <div class="card filter-item tarpulin">
+                <img src="" alt="Studio Services">
+                <div class="card-content">
+                    <h3>Tarpulin</h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Additional Cards for Photo Restoration and Print & Lamination -->
+            <div class="card filter-item photo-restoration">
+                <img src="" alt="Photo Restoration">
+                <div class="card-content">
+                    <h3>Photo Restoration</h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="card filter-item print-lamination">
+                <img src="" alt="Print & Lamination">
+                <div class="card-content">
+                    <h3>Print & Lamination</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Filter function
+        function filterSelection(category) {
+            var items = document.getElementsByClassName('filter-item');
+            if (category === 'all') {
+                category = '';
+            }
+            for (let i = 0; i < items.length; i++) {
+                items[i].style.display = items[i].classList.contains(category) ? 'block' : 'none';
+            }
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const filter = urlParams.get('filter');
+        if (filter) {
+            filterSelection(filter);
+        } else {
+            filterSelection('id'); // Default to ID if no filter is set
+        }
+
+        // JavaScript for toggling sidebar and burger menu
+            const burgerMenu = document.querySelector('.burger-menu');
+            const sidebar = document.querySelector('.sidebar');
+            const contentArea = document.querySelector('.content-area');
+
+            burgerMenu.addEventListener('click', () => {
+                sidebar.classList.toggle('active');
+                burgerMenu.classList.toggle('active');
+                contentArea.classList.toggle('active');
+            });
+
+            document.getElementById("openFormButton").addEventListener("click", function() {
+            window.open("..//Order/order.html", "_blank");
+            
+            });
+    </script>
+</body>
+</html>

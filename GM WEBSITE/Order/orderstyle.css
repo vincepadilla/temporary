@@ -1,0 +1,113 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Koulen", sans-serif;
+  background-image: url('../bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5); 
+  padding: 20px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+   width: 210px; 
+   height: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 100px auto 20px;
+  padding: 20px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.instructions-card {
+  flex: 1 1 300px; /* Allows it to grow with a minimum width */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 350px; /* Keeps card at a fixed width */
+}
+
+.form-container {
+  flex: 2 1 600px; /* Takes up more space than the card */
+  max-width: 800px;
+}
+
+.instructions-card h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.instructions-card p,
+.instructions-card ul {
+  font-size: 1em;
+  color: #333;
+}
+
+.instructions-card ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.instructions-card li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.back-btn {
+  margin: 10px 20px;
+  background-color: #f0f0f0;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 12px;
+  height: 40px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.back-btn:hover {
+  background: #8cd8c5;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .instructions-card,
+  .form-container {
+      max-width: 100%;
+  }
+}

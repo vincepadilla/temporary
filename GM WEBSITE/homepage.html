@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="homepage.css">
+
+    <!-- ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+      
+      <!-- SLIDER -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="GMLOGO.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="https://maps.app.goo.gl/7ivUTBPbvkCj892X7" target="_blank">Location</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="Services/services.html">Services</a></li>
+            <li><a href="#">Promos</a></li>
+        </ul>
+
+       <!-- Burger Icon -->
+       <a class="burger" onclick="toggleSidebar()"><i class='bx bx-menu bx-md'></i></a>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#">PACKAGES</a>
+        <a href="#">PROMOS</a>
+        <a href="https://maps.app.goo.gl/7ivUTBPbvkCj892X7">LOCATION</a>
+
+        <a href=".//Services/services.html" class="services">SERVICES</a>
+
+    </div>
+    
+    <!--section 1-->
+    <section class="section1">
+        <div class="text-overlay">
+            <p>MASTERING THE ART OF</p>
+            <h1>CAPTURE. PRINT. LOVE.</h1>
+        </div>
+        <img src="CAMERA.png" alt="Camera" class="camera" id="camera-img">
+    </section>
+
+    <div class="container swiper">
+        <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="images/ID Cover.jpg" alt="Card Image" class="card-image">
+                        <p class="badge developer">Rush ID</p>
+                        <h2 class="card-title">Experience our high-quality ID Printing. We deliver professional photos that are perfect for you</h2>
+                        <button class="material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="images/Studio Cover.jpg" alt="Card Image" class="card-image">
+                        <p class="badge designer">Photo Studio with Editing</p>
+                        <h2 class="card-title">Experience our top-quality studio photography services, perfect for capturing life's special moments.</h2>
+                        <button class="material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="images/Photo Restoration Cover.jpg" alt="Card Image" class="card-image">
+                        <p class="badge editor">Photo Restoration</p>
+                        <h2 class="card-title">Experience our top-quality photo restoration services and bring your cherished memories back to life. </h2>
+                        <button class="material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="images/printing.png" alt="Card Image" class="card-image">
+                        <p class="badge gamer">Print and Xerox</p>
+                        <h2 class="card-title">Get high-quality printing and photocopy services for all your documents, ensuring clear, crisp results every time.</h2>
+                        <button class="material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="images/tarpuline.png" alt="Card Image" class="card-image">
+                        <p class="badge marketer">Tarpaulin/Sintra Printing</p>
+                        <h2 class="card-title">Our tarpaulin printing service offers durable, high-quality prints ideal for outdoor banners, Promotional and Events</h2>
+                        <button class="material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="images/laminate.png" alt="Card Image" class="card-image">
+                        <p class="badge marketer">Lamination</p>
+                        <h2 class="card-title">Preserve your important documents, photos, and business materials with our professional lamination services.</h2>
+                        <button class="material-symbols-outlined">arrow_forward</button>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <button class="cta-button">Services</button>
+
+     <!-- Services Section -->
+     <div class="services-section">
+        <div class="service-card">
+            <h3>PERSONALIZE PHOTO PRINTING</h3>
+            <p>Create lasting memories with our high-quality, customized photo printing options. Whether it's for a personal album or a professional project, we deliver exceptional prints.</p>
+            <a href="#">Learn more <span>&rarr;</span></a>
+        </div>
+        <div class="service-card">
+            <h3>CUSTOMER SERVICE CHATBOX</h3>
+            <p>Need help? Chat with our customer service team for instant support. Our team is here to assist you with any queries you may have!</p>
+            <a href="#">Learn more <span>&rarr;</span></a>
+        </div>
+        <div class="service-card">
+            <h3>PROMO OFFERS</h3>
+            <p>Take advantage of limited-time discounts and special promotions on selected products. Don't miss out!</p>
+            <a href="#">Learn more <span>&rarr;</span></a>
+        </div>
+
+        <div class="service-card">
+            <h3>SAFE AND SECURE TRANSACTIONS</h3>
+            <p>Rest assured, all transactions are protected by advanced security protocols, ensuring a safe shopping experience for you.</p>
+            <a href="#">Learn more <span>&rarr;</span></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>FOLLOW US</h2>
+            <div class="footer-icons">
+                <a href="#"><img src="SOCIAL MEDIA ICON/facebook.png" class="footer-icon" alt="Facebook"></a>
+                <a href="#"><img src="SOCIAL MEDIA ICON/instagram.png" class="footer-icon" alt="Instagram"></a>
+                <a href="#"><img src="SOCIAL MEDIA ICON/twitter.png" class="footer-icon" alt="Twitter"></a>
+                <a href="#"><img src="SOCIAL MEDIA ICON/youtube.png" class="footer-icon" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h2>OTHER LINKS</h2>
+            <a href="./Aboutus/aboutus.html">ABOUT US</a>
+            <a href="help-center">HELP CENTER</a>
+            <a href="faqs.html">FAQS</a>
+            <a href="privacy-policy">PRIVACY POLICY</a>
+            <a href="terms-and-conditions">TERM AND CONDITIONS</a>
+        </div>
+    </div>
+    <div class="footer-text">
+        <p>Copyright © 2024 G.M CAMERA STUDIO PH. All Right Reserved.</p>
+    </div>
+</footer>
+</html>
